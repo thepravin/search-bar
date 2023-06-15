@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css " />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Jost:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Seacrh Bar & Filter</title>
+</head>
+
+<body>
+    <h2>Books</h2>
+
+    <input type="text" name="" id="myInput" placeholder="search......" onkeyup="searchFun()">
+
+
+    <table id="myTable">
+        <tr id="header">
+            <th style="width:40%">Book Name</th>
+            <th style="width:30%">Author</th>
+            <th style="width: 30%">Price (INR)</th>
+        </tr>
+
+
+        <tr>
+            <td>1. To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>2. 1984</td>
+            <td>George Orwell</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>3. The Great Gatsby</td>
+            <td>F. Scott Fitzgerald</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>4. Pride and Prejudice</td>
+            <td>Jane Austen</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>5. The Catcher in the Rye</td>
+            <td>J.D. Salinger</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>6. To the Lighthouse</td>
+            <td>Virginia Woolf</td>
+            <td>380</td>
+        </tr>
+        <tr>
+            <td>7. Brave New World</td>
+            <td>Aldous Huxley</td>
+            <td>420</td>
+        </tr>
+        <tr>
+            <td>8. Moby-Dick</td>
+            <td>Herman Melville</td>
+            <td>550</td>
+        </tr>
+        <tr>
+            <td>9. The Lord of the Rings</td>
+            <td>J.R.R. Tolkien</td>
+            <td>650</td>
+        </tr>
+        <tr>
+            <td>10. War and Peace</td>
+            <td>Leo Tolstoy</td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>11. The Odyssey</td>
+            <td>Homer</td>
+            <td>320</td>
+        </tr>
+        <tr>
+            <td>12. Don Quixote</td>
+            <td>Miguel de Cervantes</td>
+            <td>470</td>
+        </tr>
+        <tr>
+            <td>13. The Divine Comedy</td>
+            <td>Dante Alighieri</td>
+            <td>390</td>
+        </tr>
+        <tr>
+            <td>14. Frankenstein</td>
+            <td>Mary Shelley</td>
+            <td>380</td>
+        </tr>
+        <tr>
+            <td>15. The Hobbit</td>
+            <td>J.R.R. Tolkien</td>
+            <td>420</td>
+        </tr>
+        <tr>
+            <td>16. Jane Eyre</td>
+            <td>Charlotte Brontë</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>17. The Adventures of Huckleberry Finn</td>
+            <td>Mark Twain</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>18. The Little Prince</td>
+            <td>Antoine de Saint-Exupéry</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>19. One Hundred Years of Solitude</td>
+            <td>Gabriel García Márquez</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>20. The Alchemist</td>
+            <td>Paulo Coelho</td>
+            <td>320</td>
+        </tr>
+        <tr>
+            <td>21. Crime and Punishment</td>
+            <td>Fyodor Dostoevsky</td>
+            <td>380</td>
+        </tr>
+        <tr>
+            <td>22. Lord of the Flies</td>
+            <td>William Golding</td>
+            <td>420</td>
+        </tr>
+        <tr>
+            <td>23. The Picture of Dorian Gray</td>
+            <td>Oscar Wilde</td>
+            <td>370</td>
+        </tr>
+        <tr>
+            <td>24. The Brothers Karamazov</td>
+            <td>Fyodor Dostoevsky</td>
+            <td>480</td>
+        </tr>
+        <tr>
+            <td>25. The Count of Monte Cristo</td>
+            <td>Alexandre Dumas</td>
+            <td>460</td>
+        </tr>
+        <tr>
+            <td>26. Anna Karenina</td>
+            <td>Leo Tolstoy</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>27. The Grapes of Wrath</td>
+            <td>John Steinbeck</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>28. The Canterbury Tales</td>
+            <td>Geoffrey Chaucer</td>
+            <td>340</td>
+        </tr>
+        <tr>
+            <td>29. The Scarlet Letter</td>
+            <td>Nathaniel Hawthorne</td>
+            <td>390</td>
+        </tr>
+        <tr>
+            <td>30. The Iliad</td>
+            <td>Homer</td>
+            <td>330</td>
+        </tr>
+        <tr>
+            <td>31. Ulysses</td>
+            <td>James Joyce</td>
+            <td>420</td>
+        </tr>
+        <tr>
+            <td>32. Wuthering Heights</td>
+            <td>Emily Brontë</td>
+            <td>370</td>
+        </tr>
+        <tr>
+            <td>33. A Tale of Two Cities</td>
+            <td>Charles Dickens</td>
+            <td>430</td>
+        </tr>
+        <tr>
+            <td>34. The Adventures of Tom Sawyer</td>
+            <td>Mark Twain</td>
+            <td>360</td>
+        </tr>
+        <tr>
+            <td>35. Heart of Darkness</td>
+            <td>Joseph Conrad</td>
+            <td>380</td>
+        </tr>
+        <tr>
+            <td>36. The Old Man and the Sea</td>
+            <td>Ernest Hemingway</td>
+            <td>320</td>
+        </tr>
+        <tr>
+            <td>37. Les Misérables</td>
+            <td>Victor Hugo</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>38. The Sun Also Rises</td>
+            <td>Ernest Hemingway</td>
+            <td>340</td>
+        </tr>
+        <tr>
+            <td>39. Catch-22</td>
+            <td>Joseph Heller</td>
+            <td>410</td>
+        </tr>
+        <tr>
+            <td>40. The Sound and the Fury</td>
+            <td>William Faulkner</td>
+            <td>390</td>
+        </tr>
+        <tr>
+            <td>41. A Clockwork Orange</td>
+            <td>Anthony Burgess</td>
+            <td>380</td>
+        </tr>
+        <tr>
+            <td>42. The Stranger</td>
+            <td>Albert Camus</td>
+            <td>370</td>
+        </tr>
+        <tr>
+            <td>43. The Picture of Dorian Gray</td>
+            <td>Oscar Wilde</td>
+            <td>370</td>
+        </tr>
+        <tr>
+            <td>44. The Brothers Karamazov</td>
+            <td>Fyodor Dostoevsky</td>
+            <td>480</td>
+        </tr>
+        <tr>
+            <td>45. The Count of Monte Cristo</td>
+            <td>Alexandre Dumas</td>
+            <td>460</td>
+        </tr>
+        <tr>
+            <td>46. Anna Karenina</td>
+            <td>Leo Tolstoy</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>47. The Grapes of Wrath</td>
+            <td>John Steinbeck</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>48. The Canterbury Tales</td>
+            <td>Geoffrey Chaucer</td>
+            <td>340</td>
+        </tr>
+        <tr>
+            <td>49. The Scarlet Letter</td>
+            <td>Nathaniel Hawthorne</td>
+            <td>390</td>
+        </tr>
+        <tr>
+            <td>50. The Iliad</td>
+            <td>Homer</td>
+            <td>330</td>
+        </tr>
+
+    </table>
+
+
+    <script>
+        const searchFun = () => {
+            let filter = document.getElementById('myInput').value.toUpperCase();
+            let myTable = document.getElementById('myTable');
+            var tr = myTable.getElementsByTagName('tr');
+    
+            for (var i = 0; i < tr.length; i++) {
+                let td = tr[i].getElementsByTagName('td')[0];
+                if (td) {
+                    let textValue = td.textContent || td.innerText;
+                    if (textValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
